@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Bootstrap Form</title>
+</head>
+<body>
+
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="assets/bootstrap-logo.svg" alt="Bootstrap" width="30" height="24" class="d-inline-block align-text-top">
+            CILSA Full Stack Dev Bootcamp
+          </a>
+        </div>
+    </nav>
+
+   
+
+    <main>
+        <div class="container mt-5"> 
+            <h2>Formulario de datos personales</h2>
+            <form id="personal-data-form" name="personal-data-form" method="post" action="#">
+                <div class="mb-3">
+                    <label for="first-name" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="first-name" name="first-name">                
+                </div>
+                <div class="mb-3">
+                    <label for="last-name" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" id="last-name" name="last-name">          
+                </div>            
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" name="email">                
+                </div>            
+                <div class="mb-3">
+                    <label for="birthdate" class="form-label">Fecha de Nacimiento</label>
+                    <input type="date" class="form-control" id="birthdate" name="birthdate">                
+                </div>            
+                <div class="mb-3">
+                    <label for="country" class="form-label">País de Residencia</label>
+                    <input type="text" class="form-control" id="country" name="country">                
+                </div>            
+                <button type="submit" class="btn btn-primary">Enviar</button>
+              </form>
+              <br>
+              <button id="toogleStyle" type="button" class="btn btn-primary">Alto contraste</button>
+        </div>                
+    </main>    
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
